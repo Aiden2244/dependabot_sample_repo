@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/drake_pip"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore(pip-deps):"
+
+  - package-ecosystem: "pip"
+    directory: "/drake_poetry"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore(poetry-deps):"
